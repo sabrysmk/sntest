@@ -35,6 +35,7 @@
 		1FC53F901E99790F00DD6CA5 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		1FC53F921E997AFC00DD6CA5 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		1FC53F941E997C7400DD6CA5 /* Fancybtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fancybtn.swift; sourceTree = "<group>"; };
+		1FC53F961E9ADA9000DD6CA5 /* socialnetwork.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = socialnetwork.entitlements; sourceTree = "<group>"; };
 		7F999F35CA041A47A54C4D72 /* Pods-socialnetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialnetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialnetwork/Pods-socialnetwork.debug.xcconfig"; sourceTree = "<group>"; };
 		CB06CB9F23C03749312BE37E /* Pods_socialnetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_socialnetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA669E8D923F351094E9FABA /* Pods-socialnetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialnetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialnetwork/Pods-socialnetwork.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		1FACBC3A1E9114BF00CC5B24 /* socialnetwork */ = {
 			isa = PBXGroup;
 			children = (
+				1FC53F961E9ADA9000DD6CA5 /* socialnetwork.entitlements */,
 				1FC53F8D1E99759700DD6CA5 /* Util */,
 				1FACBC511E91193100CC5B24 /* Controller */,
 				1FACBC501E91192A00CC5B24 /* View */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = CZAP38JFAE;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -391,6 +398,7 @@
 			baseConfigurationReference = 7F999F35CA041A47A54C4D72 /* Pods-socialnetwork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = socialnetwork/socialnetwork.entitlements;
 				DEVELOPMENT_TEAM = CZAP38JFAE;
 				INFOPLIST_FILE = socialnetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -405,6 +413,7 @@
 			baseConfigurationReference = FA669E8D923F351094E9FABA /* Pods-socialnetwork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = socialnetwork/socialnetwork.entitlements;
 				DEVELOPMENT_TEAM = CZAP38JFAE;
 				INFOPLIST_FILE = socialnetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
